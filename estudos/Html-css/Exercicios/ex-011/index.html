@@ -14,6 +14,12 @@
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="imagem flexível">
     </picture>
-    
+    <h1>Reproduzir audio</h1>
+    <p>Vamos aprender a reproduzi áudios em HTML5</p>
+    <audio src="midia/Third_Time.mp3" controls autoplay > </audio>    <!--MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop > <!-- sempre bom usar o matadata pois não deixa o site pesado -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> 
+        <p>Caso não conseguir ouvir o audio, talvez seu navegador nao seja compativel. <a href="midia/guanacast-33.mp3"> Clique aqui para fazer o download do audio.</a></p>
+    </audio> <!-- Evitar de usar arquivo WAV, pois são muito pesados.-->
 </body>
 </html>
