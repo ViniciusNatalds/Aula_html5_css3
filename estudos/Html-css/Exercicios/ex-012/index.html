@@ -9,13 +9,17 @@
     <h1>Inserindo videos hospedados localmente</h1>
     <p>Este video está hospedado no meu proprio servidor</p>
 
-    <video src="midia/meuvideo.m4v" width="500" controls poster="imagens/capavideo.jpg"> </video> <!--Jeito simples-->
+    <video src="midia/meuvideo.m4v" width="560" controls poster="imagens/capavideo.jpg"> </video> <!--Jeito simples-->
 
-    <video width="500" poster="imagens/capavideo.jpg" controls> <!--Deve-se tomar cuidado com a hospedagem de video no seu proprio site, pois isso consome podem e vao consumir muito trafico de dados.-->
+    <video width="560" poster="imagens/capavideo.jpg" controls loop> <!--Deve-se tomar cuidado com a hospedagem de video no seu proprio site, pois isso consome podem e vao consumir muito trafico de dados.-->
         <source src="midia/meuvideo.mp4" type="video/mp4">
         <source src="midia/meuvideo.m4v" type="video/m4v">
         <p>Seu navegador não é compativel com os arquivos de video.</p>
 
     </video> <!-- Maneira recomendada de se fazer, sempre bom usar os tipos de arquivos mais compativeis, para ser acessivel a todos os usuarios.-->
+    <h1>inserindo videos do youtube </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Forma mais recomendado pois diminui o custo de hospedagem do site.-->
+    <h1>Inserindo videos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> <!-- O vimeo é recomendado para uso restrito, porem deve-se assinar.-->
 </body>
 </html>
